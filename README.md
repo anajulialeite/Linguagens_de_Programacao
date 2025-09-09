@@ -8,3 +8,7 @@ Esse repositório contém todos os exercícios feitos em sala de aula e projetos
 ## Links Úteis
 
 https://karythongomes.com.br/materiais/
+
+## License
+
+[![MIT License](https://img.shields.io/badge/License-MIT-%231C003F.svg)](./LICENSE)
