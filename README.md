@@ -12,7 +12,11 @@ Esse repositório contém todos os exercícios feitos em sala de aula e projetos
 
 ## Link Útil
 
-https://karythongomes.com.br/materiais/
+Este é o link do material do professor <a href= "https://karythongomes.com.br/materiais/">Karython Gomes</a>
+
+Site do Mozilla sobre <a href= "https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Reference/Status">Status HTTP</a>
+
+Site do Alura sobre <a href= "https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Reference/Status">Conceitos de HTTP</a>
 
 ## License
 
