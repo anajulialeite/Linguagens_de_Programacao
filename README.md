@@ -49,7 +49,7 @@ Conexão com o banco de dados realizada com sucesso!
 ## Pré-requisitos
 
 <li>Visual Studio Code ou PyCharm Community</li>
-<li>Python 2.13</li>
+<li>Python 3.12</li>
 <li>SQLite</li>
 <li>pip (Gerenciador de Pacotes)</li>
 <li>Postman</li>
