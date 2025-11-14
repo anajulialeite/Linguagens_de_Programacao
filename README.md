@@ -46,6 +46,14 @@ Conexão com o banco de dados realizada com sucesso!
 ```
 ---
 
+## Pré-requisitos
+
+<li>Visual Studio Code ou PyCharm Community</li>
+<li>Python 2.13</li>
+<li>SQLite</li>
+<li>pip (Gerenciador de Pacotes)</li>
+<li>Postman</li>
+
 ## License
 
 [![MIT License](https://img.shields.io/badge/License-MIT-%231C003F.svg)](./LICENSE)
