@@ -8,7 +8,7 @@
 
 Esse repositório contém todos os exercícios feitos em sala de aula e projetos relacionados a Programação em Python.
 
-## Link úteis
+## Links úteis
 
 Este é o link do material do professor <a href= "https://karythongomes.com.br/materiais/">Karython Gomes</a>
 
