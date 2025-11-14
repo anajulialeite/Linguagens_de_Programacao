@@ -14,7 +14,7 @@ flask db upgrade
 
 
 Para o linux os comandos são
-export FLASK_APP=run.py
+export FLASK_APP=app.py
 
 Se você estiver em desenvolvimento e quiser modo debug:
 export FLASK_ENV=development
