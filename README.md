@@ -16,6 +16,36 @@ Site do Mozilla sobre <a href= "https://developer.mozilla.org/pt-BR/docs/Web/HTT
 
 Site do Alura sobre <a href= "https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Reference/Status">Conceitos de HTTP</a>
 
+---
+
+## Instrução para Executar
+
+Clone este repositório:
+```bash
+git clone https://github.com/anajulialeite/Linguagens_de_Programacao.git
+```
+Ativar a .venv:
+```bash
+cd .venv
+cd scripts
+activate
+cd ..
+cd ..
+```
+Defina a variável de ambiente do Flask
+```bash
+$env:FLASK_APP="app.py"
+$env:FLASK_ENV="development"
+```
+Rode o servidor Flask
+```bash
+python -m flask run
+Conexão com o banco de dados realizada com sucesso!
+ * Running on http://127.0.0.1:5000
+
+```
+---
+
 ## License
 
 [![MIT License](https://img.shields.io/badge/License-MIT-%231C003F.svg)](./LICENSE)
