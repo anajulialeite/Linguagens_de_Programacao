@@ -1,0 +1,8 @@
+﻿# -*- coding: utf-8 -*-
+
+# Ler dois núeros e exibir a soma
+# Exercicio 1
+n1 = int(input("Digite o primeiro número: "))
+n2 = int(input("Digite o segundo número: "))
+soma = n1 + n2
+print("A soma é:", soma)
