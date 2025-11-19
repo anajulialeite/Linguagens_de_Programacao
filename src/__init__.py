@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request
 from flask_restful import Api
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
@@ -8,18 +8,17 @@ import os
 
 load_dotenv()
 
-# instanciando o Flask e a Api
 app = Flask(__name__)
+app.config.from_object('connection')
+
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 ma = Marshmallow(app)
 api = Api(app)
 
+# importa os models (para o migrate funcionar)
+from src.models.usuario_model import UsuarioModel
+from src.models.tarefa_model import TarefaModel
 
-
-#TODO: Apontar os modelos (tabelas)
-#      Apontar as Views
-
-from src.models import usuario_model
-
-from src.views import usuario_view
+# importa as views (elas mesmas registram as rotas)
+from src.views import usuario_view, tarefa_view
