@@ -18,6 +18,8 @@ Site do Mozilla sobre <a href= "https://developer.mozilla.org/pt-BR/docs/Web/HTT
 
 Site do Alura sobre <a href= "https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Reference/Status">Conceitos de HTTP</a>
 
+Link das Pesquisas de Bibliotecas em <a href= "https://pypi.org/?authuser=1">Python
+
 ---
 
 ## Instrução para Executar
