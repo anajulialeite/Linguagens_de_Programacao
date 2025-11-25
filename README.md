@@ -6,8 +6,7 @@
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" align="left" width="50" height="50"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" align="left" width="50" height="50"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/powershell/powershell-original.svg" align="left" width="50" height="50"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" align="left" width="50" height="50"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" align="center" width="50" height="50"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" align="center" width="50" height="50"/>
 
 Esse repositório contém todos os exercícios feitos em sala de aula e projetos relacionados a Programação em Python.
 
@@ -18,6 +17,8 @@ Este é o link do material do professor <a href= "https://karythongomes.com.br/m
 Site do Mozilla sobre <a href= "https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Reference/Status">Status HTTP</a>
 
 Site do Alura sobre <a href= "https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Reference/Status">Conceitos de HTTP</a>
+
+Link das Pesquisas de Bibliotecas em <a href= "https://pypi.org/?authuser=1">Python
 
 ---
 
