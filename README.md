@@ -8,7 +8,7 @@
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/powershell/powershell-original.svg" align="left" width="50" height="50"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" align="center" width="50" height="50"/>
 
-Esse repositório contém todos os exercícios feitos em sala de aula e projetos relacionados a Programação em Python.
+Esse repositório contém todos os exercícios feitos em sala de aula e uma API em Python pra endendermos melhor a linguagem de programação e as suas funcionabilidades.
 
 ## Links úteis
 
@@ -55,7 +55,6 @@ Conexão com o banco de dados realizada com sucesso!
 <li>Visual Studio Code ou PyCharm Community Edition</li>
 <li>Python 3.12</li>
 <li>SQLite</li>
-<li>pip (Gerenciador de Pacotes)</li>
 <li>Postman</li>
 
 ## License
