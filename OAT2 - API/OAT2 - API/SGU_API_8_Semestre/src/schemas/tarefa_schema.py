@@ -1,3 +1,4 @@
+# src/schemas/tarefa_schema.py
 from src import ma
 from src.models.tarefa_model import TarefaModel
 
@@ -10,3 +11,4 @@ class TarefaSchema(ma.SQLAlchemySchema):
     titulo = ma.auto_field()
     descricao = ma.auto_field()
     status = ma.auto_field()
+    usuario_id = ma.auto_field()   # adicionado explicitamente
