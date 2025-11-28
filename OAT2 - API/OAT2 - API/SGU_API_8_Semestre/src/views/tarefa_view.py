@@ -4,7 +4,6 @@ from flask import request, jsonify, make_response
 from src.schemas import tarefa_schema
 from src.models.tarefa_model import TarefaModel
 from src.services import tarefa_service, usuario_service
-from src import api
 
 
 class TarefaList(Resource):
@@ -23,7 +22,7 @@ class TarefaList(Resource):
         except ValidationError as err:
             return make_response(jsonify(err.messages), 400)
 
-        # valida o usuario_id
+        # valida usuario_id
         if not usuario_service.listar_usuario_id(dados['usuario_id']):
             return make_response(jsonify({"message": "Usuário não encontrado"}), 404)
 
@@ -35,9 +34,6 @@ class TarefaList(Resource):
 
         resultado = tarefa_service.cadastrar_tarefa(nova_tarefa)
         return make_response(jsonify(schema.dump(resultado)), 201)
-
-
-api.add_resource(TarefaList, '/tarefa')
 
 
 class TarefaResource(Resource):
@@ -56,7 +52,7 @@ class TarefaResource(Resource):
         except ValidationError as err:
             return make_response(jsonify(err.messages), 400)
 
-        # valida o usuário_id na edição
+        # valida usuario_id na edição
         if not usuario_service.listar_usuario_id(dados['usuario_id']):
             return make_response(jsonify({"message": "Usuário não encontrado"}), 404)
 
@@ -71,6 +67,3 @@ class TarefaResource(Resource):
             return make_response(jsonify({"message": "Tarefa excluída com sucesso"}), 200)
 
         return make_response(jsonify({"message": "Tarefa não encontrada"}), 404)
-
-
-api.add_resource(TarefaResource, '/tarefa/<int:id_tarefa>')

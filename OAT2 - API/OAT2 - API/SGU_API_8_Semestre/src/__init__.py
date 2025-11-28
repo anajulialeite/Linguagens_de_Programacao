@@ -1,27 +1,37 @@
-from flask import Flask, request
-from flask_restful import Api
+from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from flask_migrate import Migrate
+from flask_restful import Api
 from flask_marshmallow import Marshmallow
-from dotenv import load_dotenv
-import os
+from flask_migrate import Migrate
 
-load_dotenv()
+db = SQLAlchemy()
+ma = Marshmallow()
+migrate = Migrate()
+api = Api()
 
-app = Flask(__name__)
-app.config.from_object('connection')
-db = SQLAlchemy(app)
-migrate = Migrate(app, db)
-ma = Marshmallow(app)
-api = Api(app)
+def create_app():
+    app = Flask(__name__)
+    app.config.from_object('connection')
 
-# importa os models (para o migrate funcionar)
-from .models import usuario_model, tarefa_model
+    # Inicializar extensões
+    db.init_app(app)
+    ma.init_app(app)
+    migrate.init_app(app, db)
+    api.init_app(app)
 
+    # Importar models
+    with app.app_context():
+        from src.models.usuario_model import UsuarioModel
+        from src.models.tarefa_model import TarefaModel
 
-#TODO: Apontar os modelos (tabelas)
-#      Apontar as Views
+        # Importar rotas SOMENTE AQUI
+        from src.views.usuario_view import UsuarioList, UsuarioResource
+        from src.views.tarefa_view import TarefaList, TarefaResource
 
-from .views import usuario_view, tarefa_view
+        # Registrar as rotas
+        api.add_resource(UsuarioList, "/usuario")
+        api.add_resource(UsuarioResource, "/usuario/<int:id_usuario>")
+        api.add_resource(TarefaList, "/tarefa")
+        api.add_resource(TarefaResource, "/tarefa/<int:id_tarefa>")
 
-
+    return app
