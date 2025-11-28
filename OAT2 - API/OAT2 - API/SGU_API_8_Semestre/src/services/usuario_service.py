@@ -11,7 +11,7 @@ def cadastrar_usuario(usuario):
     
 
 def listar_usuario():
-    usuarios = UsuarioModel.query.all()
+    usuario = UsuarioModel.query.all()
     schema = UsuarioSchema(many=True)
     return UsuarioModel.query.all()
 

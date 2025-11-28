@@ -8,12 +8,12 @@ from src.services import usuario_service
 
 class UsuarioList(Resource):
     def get(self):
-        usuarios = usuario_service.listar_usuario()
-        if not usuarios:
+        usuario = usuario_service.listar_usuario()
+        if not usuario:
             return make_response(jsonify({"message": "Nenhum usuário encontrado"}), 404)
 
         schema = usuario_schema.UsuarioSchema(many=True)
-        return make_response(jsonify(schema.dump(usuarios)), 200)
+        return make_response(jsonify(schema.dump(usuario)), 200)
 
     def post(self):
         schema = usuario_schema.UsuarioSchema()
@@ -28,8 +28,7 @@ class UsuarioList(Resource):
 
         novo_usuario = UsuarioModel(
             nome=dados['nome'],
-            email=dados['email'],
-            senha=dados['senha']
+            email=dados['email']
         )
         novo_usuario.gen_senha(dados['senha'])
 
