@@ -23,6 +23,21 @@ Site do Alura sobre <a href= "https://developer.mozilla.org/pt-BR/docs/Web/HTTP/
 
 Link das Pesquisas de Bibliotecas em <a href= "https://pypi.org/?authuser=1">Python
 
+## Objetivo da API
+
+OAT entrega dos alunos:
+
+Mesma API do repositório do professor Karython (Mais uma camada
+
+<li>Outra model Tarefa</li>
+<li>Outra entitie</li>
+<li>Outra service</li>
+<li>Outra schema</li>
+<li>Outra View</li>
+<li>Conectada com o banco de dados (nova migracao) nao precisa rodar o flask db init novamente (migrate, upgrade)</li>
+
+Link do repositório do <a href= "https://github.com/karython/SGU_API_8_Semestre">Karyton
+
 ---
 
 ## Instrução para Executar
