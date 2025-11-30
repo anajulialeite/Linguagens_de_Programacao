@@ -35,7 +35,7 @@ Mesma API do repositório do professor Karython (Mais uma camada
 <li>Outra schema</li>
 <li>Outra View</li>
 <li>Conectada com o banco de dados (nova migracao) nao precisa rodar o flask db init novamente (migrate, upgrade)</li>
-
+<br>
 Link do repositório do <a href= "https://github.com/karython/SGU_API_8_Semestre">Karyton
 
 ---
